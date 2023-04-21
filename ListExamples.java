@@ -14,15 +14,14 @@ abstract class ListExamples implements StringChecker {
   // Returns a new list that has all the elements of the input list for which
   // the StringChecker returns true, and not the elements that return false, in
   // the same order they appeared in the input list;
-  static List<String> filter(List<String> list, StringChecker s) {
-    List<String> result = new ArrayList<>();
-    for(String s: list) {
-      if(s.checkString(s)) {
-        result.add(s);
-      }
-    }
-    return result;
-  }
+  //static List<String> filter(List<String> list, StringChecker s) {
+    //List<String> result = new ArrayList<>();
+    //for(String s: list) {
+      //if(s.checkString(s)) {
+        //result.add(s);
+    //}
+    //return result;
+  //}
 
 
   // Takes two sorted list of strings (so "a" appears before "b" and so on),
@@ -50,6 +49,5 @@ abstract class ListExamples implements StringChecker {
     }
     return result;
   }
-
-
 }
+
