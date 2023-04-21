@@ -31,10 +31,19 @@ public class ArrayExamples {
       if(num < lowest) { lowest = num; }
     }
     double sum = 0;
+    double result = 0.0;
     for(double num: arr) {
-      if(num != lowest) { sum += num; }
-    }
-    return sum / (arr.length - 1);
+      if(num != lowest ) { 
+        sum += num;
+      result = sum / (arr.length - 1);
+       }else if(num == lowest){
+        sum += num;
+        result = sum / (arr.length);
+       }
+
+
+    } 
+    return result;
   }
 
 
